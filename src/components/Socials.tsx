@@ -1,0 +1,15 @@
+import { socialData } from '../data'
+
+export function Socials() {
+  return (
+    <ul className='flex justify-center items-center gap-x-[30px]'>
+      {socialData.map((item, index) => {
+        return (
+          <li key={index}>
+            <a href={item.href} className="">{item.icon}</a>
+          </li>
+        );
+      })}
+    </ul>
+  )
+}
